@@ -1,11 +1,27 @@
 <button [hidden]="true" id="train-start-btn" (click)="startTrain()">
   Start train
 </button>
-<div>
-  <img
-    width="100%"
-    heigth="100%"
-    alt="42images"
-    [src]="'assets/img/' + imgURL"
-  />
-</div>
+
+<ng-container *ngIf="step === 0">
+  <img width="100%" heigth="100%" src="assets/img/42.1.png" />
+</ng-container>
+
+<ng-container *ngIf="step === 1">
+  {{ val2 }}
+  <img width="100%" heigth="100%" src="assets/img/42.2.png" />
+</ng-container>
+<ng-container *ngIf="step === 2">
+  {{ val3 }}
+  <img width="100%" heigth="100%" src="assets/img/42.3.png" />
+</ng-container>
+<ng-container *ngIf="step === 3">
+  <img width="100%" heigth="100%" src="assets/img/42.4.png" />
+</ng-container>
+<ng-container *ngIf="step === 4">
+  <strong>{{ batchSFValue }}</strong>
+  <iframe
+    src="http://127.0.0.1:7101/42/faces/index.jspx"
+    title="description"
+  ></iframe>
+  <img width="100%" heigth="100%" src="assets/img/42.5.png" />
+</ng-container>
