@@ -2,7 +2,7 @@ var observer = new MutationObserver(function(mutations) {
    if (document.contains(document.body)) {
         var myElem = document.createElement('div');
         myElem.innerHTML = 'Hello world';
-        myElem.childList.add('superbclass');
+        myElem.classList.add('superbclass');
         document.body.appendChild(myElem);
         observer.disconnect();
     }
