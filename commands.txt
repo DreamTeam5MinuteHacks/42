@@ -1,0 +1,1 @@
+keytool -import -alias sf_cert -file S:\Documents\42_Dev\salesforce-certificate.cer -keystore C:\Program Files\Java\jdk1.8.0_241\jre\lib\security\cacerts
