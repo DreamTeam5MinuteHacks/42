@@ -1,1 +1,11 @@
-<button [hidden]=true id="train-start-btn" (click)="startTrain()">Start train</button>
+<button [hidden]="true" id="train-start-btn" (click)="startTrain()">
+  Start train
+</button>
+<div>
+  <img
+    width="100%"
+    heigth="100%"
+    alt="42images"
+    [src]="'assets/img/' + imgURL"
+  />
+</div>
